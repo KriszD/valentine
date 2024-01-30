@@ -1,18 +1,14 @@
 import streamlit as st
 
-def press():
-    st.write('you werent suppposed to press that')
-    st.button('no', key=1, disabled=True)
-
 def love():
     with cent_co:
         st.write('yipeee‼️❤️💐😘')
+        st.image('cha.jpg', width=150)
 
-left_co, cent_co,last_co = st.columns(3)
+left_co, cent_co, last_co = st.columns(3)
 with cent_co:
     st.image('valentinegato.png', width=300)
+    st.write('will you be my valentine? :3')
     st.button('yes', key=2, on_click=love)
 
-st.button('no',key=1, on_click=press)
-
-
+st.button('no', disabled=True)
